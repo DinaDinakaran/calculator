@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+   background-color: #AAA9BC;
+}
+.calculater-grid{
+display: grid;
+justify-content: center;
+align-content: center;
+gap: 5px;
+
+min-height: 100vh;
+grid-template-columns: repeat(4, 82px);
+grid-template-rows: minmax(120px,auto) repeat(5,60px);
+}
+.number-btn{
+    background-color: #FFE7FF;
+    border: 0;
+    cursor: pointer;
+    border-radius: 30px;
+
+    font-size: 2rem;
+}
+.number-btn:hover{
+    background-color: azure;
+}
+.operater-btn{
+    background-color:#C0FCF7;
+    border: 0;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 2rem;
+}
+.operater-btn:hover{
+    background-color: lightsalmon;
+}
+.span-two{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1/-1;
+    background-color:white;
+   
+    border-radius: 18px;
+    padding: 5px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-around;
+   flex-direction: column;
+   word-wrap: break-word;
+   word-break: break-all;
+   margin: 5px;
+}
+.previous-poration{
+    color:grey;
+    font-size: 1rem;
+}
+.current-poration
+{
+    color: black;
+    font-size: x-large;
+}
